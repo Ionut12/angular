@@ -7,7 +7,7 @@ export class Data2Service {
     { name: 'ion', status: 'todo' },
     { name: 'aaaa', status: 'todo' },
     { name: 'sss', status: 'todo' },
-    { name: 'ion', status: 'todo' },
+    { name: 'ion', status: 'done' },
   ]);
   constructor() {}
 

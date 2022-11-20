@@ -7,8 +7,8 @@ import { Data2Service } from '../data2.service';
   styleUrls: ['./list1.component.css'],
 })
 export class List1Component implements OnInit {
-  @Input() addTreaba = [];
-  constructor(public data: Data2Service) {}
+  @Input() items = [];
+  constructor() {}
 
   ngOnInit() {}
 }
