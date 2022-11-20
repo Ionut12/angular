@@ -8,7 +8,6 @@ import { DataService } from './data.service';
 })
 export class AppComponent implements OnInit {
   persons = [];
-  name = 'Angular ' + VERSION.major;
   options: string[] = [];
   constructor(public data: DataService) {}
   ngOnInit() {
@@ -21,39 +20,4 @@ export class AppComponent implements OnInit {
       }
     });
   }
-}
-
-interface IonComponent {
-  ionInit();
-}
-///
-class IonSelector implements IonComponent {
-  constructor(ionService: IonService) {}
-  ionInit() {}
-}
-
-class IonService {
-  orice = 'orice';
-}
-
-//
-let ionSRVIn = new IonService();
-let allComponents: IonComponent[] = [new IonSelector(ionSRVIn)];
-
-// e gata s-a randat
-for (let c of allComponents) {
-  c.ionInit();
-}
-
-// uNITY
-class MonoBehavior {
-  transform = [6, 7];
-
-  start() {}
-
-  update() {}
-}
-
-class CarController extends MonoBehavior {
-  update() {}
 }
