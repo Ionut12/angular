@@ -7,6 +7,7 @@ import { HelloComponent } from './hello.component';
 import { SelectorComponent } from './selector/selector.component';
 import { AddPersonComponent } from './add-person/add-person.component';
 import { List1Component } from './list1/list1.component';
+import { AddTreabaComponent } from './add-treaba/add-treaba.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -16,6 +17,7 @@ import { List1Component } from './list1/list1.component';
     SelectorComponent,
     AddPersonComponent,
     List1Component,
+    AddTreabaComponent,
   ],
   bootstrap: [AppComponent],
 })
