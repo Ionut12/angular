@@ -8,7 +8,7 @@ import { DataService } from './data.service';
 })
 export class AppComponent implements OnInit {
   name = 'Angular ' + VERSION.major;
-  options = [];
+  options: string[] = [];
   constructor(public data: DataService) {}
   ngOnInit() {
     for (let Person of this.data.persons) {
