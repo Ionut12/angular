@@ -1,4 +1,2 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<app-selector [options]="options"></app-selector>
+<p *ngFor="let Person of data.persons">{{ Person.name }}</p>
