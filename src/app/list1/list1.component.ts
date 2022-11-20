@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Data2Service } from '../data2.service';
 
 @Component({
   selector: 'app-list1',
@@ -7,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class List1Component implements OnInit {
   @Input() addTreaba = [];
-  constructor() {}
+  constructor(public data: Data2Service) {}
 
   ngOnInit() {}
 }
