@@ -10,6 +10,6 @@ export class AddPersonComponent implements OnInit {
   constructor(public data: DataService) {}
   ngOnInit() {}
   addUser() {
-    this.data.persons.push({ name: 'vasile', location: 'azuga' });
+    this.data.addPerson('Vasile', 'azuga');
   }
 }
