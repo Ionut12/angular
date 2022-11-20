@@ -9,4 +9,7 @@ import { DataService } from '../data.service';
 export class AddPersonComponent implements OnInit {
   constructor(public data: DataService) {}
   ngOnInit() {}
+  addUser() {
+    this.data.persons.push({ name: 'vasile', location: 'azuga' });
+  }
 }

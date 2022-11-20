@@ -7,15 +7,19 @@ import { DataService } from './data.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
+  persons = [];
   name = 'Angular ' + VERSION.major;
   options: string[] = [];
   constructor(public data: DataService) {}
   ngOnInit() {
-    for (let Person of this.data.persons) {
-      if (!this.options.includes(Person.location)) {
-        this.options.push(Person.location);
+    this.data.persons.subscribe((value) => {
+      this.persons = value;
+      for (let Person of this.persons) {
+        if (!this.options.includes(Person.location)) {
+          this.options.push(Person.location);
+        }
       }
-    }
+    });
   }
 }
 
